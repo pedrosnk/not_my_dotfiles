@@ -12,6 +12,10 @@ Plug 'ervandew/supertab'
 Plug 'airblade/vim-gitgutter'
 Plug 'othree/yajs.vim'
 Plug 'rking/ag.vim'
+Plug 'fatih/vim-go'
+Plug 'mxw/vim-jsx'
+Plug 'pangloss/vim-javascript'
+Plug 'jceb/vim-orgmode'
 
 call plug#end()
 
