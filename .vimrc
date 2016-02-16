@@ -1,3 +1,29 @@
+call plug#begin('~/.vim/plugged')
+
+Plug 'tomasr/molokai'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'junegunn/vim-github-dashboard'
+Plug 'scrooloose/syntastic'
+Plug 'kien/ctrlp.vim'
+Plug 'bling/vim-airline'
+Plug 'kchmck/vim-coffee-script'
+Plug 'elixir-lang/vim-elixir'
+Plug 'ervandew/supertab'
+Plug 'airblade/vim-gitgutter'
+Plug 'othree/yajs.vim'
+Plug 'rking/ag.vim'
+
+call plug#end()
+
+" Syntastic options
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 
 set number
