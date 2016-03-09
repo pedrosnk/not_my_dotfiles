@@ -16,6 +16,7 @@ Plug 'fatih/vim-go'
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
 Plug 'jceb/vim-orgmode'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
