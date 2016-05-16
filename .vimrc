@@ -18,6 +18,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'jceb/vim-orgmode'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
+Plug 'dag/vim-fish'
 
 call plug#end()
 
