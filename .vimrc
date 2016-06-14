@@ -19,6 +19,7 @@ Plug 'jceb/vim-orgmode'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'dag/vim-fish'
+Plug 'rust-lang/rust.vim'
 
 call plug#end()
 
