@@ -17,3 +17,8 @@ set -gx PYTHONDONTWRITEBYTECODE false
 
 # Load oh-my-fish configuration.
 source $OMF_PATH/init.fish
+
+# CTRL+R to search like reverse search
+function fish_user_key_bindings
+  bind \cr 'peco_select_history (commandline -b)'
+end
