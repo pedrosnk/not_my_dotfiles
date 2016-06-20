@@ -33,6 +33,9 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+" to load jsx on js files
+let g:jsx_ext_required = 0
+
 colorscheme molokai
 set number
 let NERDTreeIgnore = ['\.pyc$', '\.egg-info$']
