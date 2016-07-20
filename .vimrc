@@ -20,7 +20,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'dag/vim-fish'
 Plug 'rust-lang/rust.vim'
-Plug 'toml-lang/toml'
+Plug 'cespare/vim-toml'
 
 call plug#end()
 
