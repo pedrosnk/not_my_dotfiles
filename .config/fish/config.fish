@@ -13,6 +13,9 @@ set -gx PYTHONDONTWRITEBYTECODE false
 # ser rust path for cargo races atocomplete
 # set -x 'RUST_SRC_PATH' /Users/{user}/desenv/rustc-1.10.0/src
 
+# Homes for virtualfish
+# set -x PROJECT_HOME $HOME/projects_path
+
 # Load oh-my-fish configuration.
 source $OMF_PATH/init.fish
 
