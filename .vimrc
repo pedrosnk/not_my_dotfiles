@@ -21,6 +21,7 @@ Plug 'tpope/vim-surround'
 Plug 'dag/vim-fish'
 Plug 'rust-lang/rust.vim'
 Plug 'cespare/vim-toml'
+Plug 'majutsushi/tagbar'
 
 call plug#end()
 
