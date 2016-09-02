@@ -23,6 +23,7 @@ Plug 'rust-lang/rust.vim'
 Plug 'cespare/vim-toml'
 Plug 'majutsushi/tagbar'
 Plug 'cypok/vim-sml'
+Plug 'rhysd/vim-crystal'
 
 call plug#end()
 
