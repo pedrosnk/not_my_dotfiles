@@ -27,6 +27,7 @@ Plug 'rhysd/vim-crystal'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'lucidstack/ctrlp-mpc.vim'
+Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()
 
@@ -97,7 +98,7 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 
 "let &colorcolumn=80
-let &colorcolumn=join(range(81,999),",")
+let &colorcolumn=join(range(101,999),",")
 
 set gfn=Hack:h12
 set backspace=2
