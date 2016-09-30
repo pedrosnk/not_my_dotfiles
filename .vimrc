@@ -24,6 +24,9 @@ Plug 'cespare/vim-toml'
 Plug 'majutsushi/tagbar'
 Plug 'cypok/vim-sml'
 Plug 'rhysd/vim-crystal'
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'lucidstack/ctrlp-mpc.vim'
 
 call plug#end()
 
