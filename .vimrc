@@ -52,6 +52,7 @@ let g:jsx_ext_required = 0
 
 colorscheme molokai
 set number
+set relativenumber
 let NERDTreeIgnore = ['\.pyc$', '\.egg-info$']
 set cursorline
 set cursorcolumn
