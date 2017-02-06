@@ -70,7 +70,7 @@ function! InsertDebuggerLine()
     elseif syntaxType == "ruby"
 	    let trace = expand("binding.pry")
         execute "normal o".trace
-    elseif syntaxType == "javascript"
+    elseif index(["javascript", "javascript.jsx"], syntaxType) != -1
 	    let trace = expand("debugger;")
         execute "normal o".trace
     else
