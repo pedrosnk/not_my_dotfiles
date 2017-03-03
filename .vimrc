@@ -28,6 +28,7 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'lucidstack/ctrlp-mpc.vim'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'leafgarland/typescript-vim'
 
 call plug#end()
 
