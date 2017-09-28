@@ -10,6 +10,9 @@ alias be='bundle exec'
 # dont generate pyc
 set -gx PYTHONDONTWRITEBYTECODE false
 
+# enable elixir shell history
+set -gx ERL_AFLAGS "-kernel shell_history enabled"
+
 # ser rust path for cargo races atocomplete
 # set -x 'RUST_SRC_PATH' /Users/{user}/desenv/rustc-1.10.0/src
 
