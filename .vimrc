@@ -42,6 +42,10 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+" Especific checkers for each language
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_ruby_checkers = ['rubocop', 'mri']
+
 " vim-go options
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
