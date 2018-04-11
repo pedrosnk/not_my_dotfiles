@@ -7,7 +7,7 @@ Plug 'scrooloose/syntastic'
 Plug 'kien/ctrlp.vim'
 Plug 'bling/vim-airline'
 Plug 'kchmck/vim-coffee-script'
-Plug 'elixir-lang/vim-elixir'
+Plug 'elixir-editors/vim-elixir'
 Plug 'ervandew/supertab'
 Plug 'airblade/vim-gitgutter'
 Plug 'othree/yajs.vim'
@@ -75,7 +75,7 @@ function! InsertDebuggerLine()
     elseif syntaxType == "ruby"
 	    let trace = expand("binding.pry")
         execute "normal o".trace
-    elseif index(["javascript", "javascript.jsx", "coffee"], syntaxType) != -1
+    elseif index(["javascript", "javascript.jsx", "coffee", "typescript"], syntaxType) != -1
 	    let trace = expand("debugger")
         execute "normal o".trace
     else
