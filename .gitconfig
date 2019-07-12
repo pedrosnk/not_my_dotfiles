@@ -4,6 +4,7 @@
   br = branch
   st = status
   pull = pull --ff-only
+  log = log --stat
 [core]
   editor = vim
   excludesfile = ~/.gitignore
