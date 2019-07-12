@@ -26,3 +26,12 @@ source $OMF_PATH/init.fish
 function fish_user_key_bindings
   bind \cr 'peco_select_history (commandline -b)'
 end
+
+# FZF
+set -x FZF_DEFAULT_COMMAND 'rg --files'
+set -x FZF_DEFAULT_OPTS '--height 40% --preview \'[[ $(file --mime {}) =~ binary ]] && echo {} is a binary file || bat {} --style=numbers --color=always\''
+
+# GOLANG
+set -x GOPATH $HOME
+set -x PATH $GOPATH/bin $PATH
+
