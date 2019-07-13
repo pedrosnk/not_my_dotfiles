@@ -29,7 +29,8 @@ end
 
 # FZF
 set -x FZF_DEFAULT_COMMAND 'rg --files'
-set -x FZF_DEFAULT_OPTS '--height 40% --preview \'[[ $(file --mime {}) =~ binary ]] && echo {} is a binary file || bat {} --style=numbers --color=always\''
+set -x FZF_DEFAULT_OPTS '--height 40% --preview \'[[ $(file --mime {}) =~ binary ]] && echo {} is a binary file || bat {} --style=numbers --theme=GitHub --color=always\''
+
 
 # GOLANG
 set -x GOPATH $HOME
