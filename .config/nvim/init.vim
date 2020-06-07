@@ -14,6 +14,7 @@ Plug 'ervandew/supertab'
 
 " Theme
 Plug 'ericbn/vim-solarized'
+Plug 'arcticicestudio/nord-vim'
 
 " Languages
 Plug 'elixir-editors/vim-elixir'
@@ -50,8 +51,10 @@ set number
 
 " Set theme
 syntax enable
-set background=light
-colorscheme solarized
+" set background=light
+" colorscheme solarized
+set background=dark
+colorscheme nord
 set termguicolors
 
 " hilight extra whitespace
