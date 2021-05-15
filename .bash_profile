@@ -7,17 +7,17 @@ source /usr/local/share/git-core/contrib/completion/git-completion.bash
 
 
 # rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
+# export PATH="$HOME/.rbenv/bin:$PATH"
 
-eval "$(rbenv init -)"
+# eval "$(rbenv init -)"
+
+# function __rbenv_ps1 () {
+#   rbenv_ruby_version=`rbenv version | sed -e 's/ .*//'`
+#   printf $rbenv_ruby_version
+# }
 
 function parse_git_branch () {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
-
-function __rbenv_ps1 () {
-  rbenv_ruby_version=`rbenv version | sed -e 's/ .*//'`
-  printf $rbenv_ruby_version
 }
 
 alias be='bundle exec'
@@ -32,4 +32,9 @@ CYAN="\[\033[0;36m\]"
 LIGHT_CYAN="\[\033[1;36m\]"
 NO_COLOUR="\[\033[0m\]"
 
-PS1="$GREEN\u $NO_COLOUR@\W <$RED\$(__rbenv_ps1)$NO_COLOUR>$YELLOW\$(parse_git_branch)$NO_COLOUR $ "
+# with rbenv
+# PS1="$GREEN\u $NO_COLOUR@\W <$RED\$(__rbenv_ps1)$NO_COLOUR>$YELLOW\$(parse_git_branch)$NO_COLOUR $ "
+
+PS1="$GREEN\u $NO_COLOUR@\W $YELLOW\$(parse_git_branch)$NO_COLOUR $ "
+
+export PATH="$HOME/.cargo/bin:$PATH"

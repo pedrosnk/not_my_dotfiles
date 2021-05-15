@@ -1,12 +1,19 @@
 [alias]
   co = checkout
   ci = commit -v
-  br = branch
+  br = branch --sort=-committerdate
   st = status
   pull = pull --ff-only
   log = log --stat
 [core]
   editor = vim
   excludesfile = ~/.gitignore
+  commitGraph = true
 [pull]
   rebase = true
+[diff]
+	algorithm = patience
+[protocol]
+	version = 2
+[gc]
+	writeCommitGraph = true

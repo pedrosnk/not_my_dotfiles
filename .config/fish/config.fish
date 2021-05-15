@@ -1,38 +1,57 @@
-# Path to your oh-my-fish.
-set -g OMF_PATH $HOME/.local/share/omf
+set -gx path /usr/local/bin $path
 
-# Path to your oh-my-fish configuration.
-set -g OMF_CONFIG $HOME/.config/omf
+# path to your oh-my-fish.
+set -g omf_path $home/.local/share/omf
+
+# path to your oh-my-fish configuration.
+set -g omf_config $home/.config/omf
 
 # set alias for bundle exec
 alias be='bundle exec'
 
 # dont generate pyc
-set -gx PYTHONDONTWRITEBYTECODE false
+set -gx pythondontwritebytecode false
 
-# enable elixir shell history
-set -gx ERL_AFLAGS "-kernel shell_history enabled"
+# set elixir/erlang history
+set -gx erl_aflags "-kernel shell_history enabled"
+
+set -gx path $home/otps/elixir/bin $path
+
+# shopify setup
+set -x turbo_bar 0
 
 # ser rust path for cargo races atocomplete
-# set -x 'RUST_SRC_PATH' /Users/{user}/desenv/rustc-1.10.0/src
+# set -x 'rust_src_path' /users/{user}/desenv/rustc-1.10.0/src
 
-# Homes for virtualfish
-# set -x PROJECT_HOME $HOME/projects_path
+# homes for virtualfish
+# set -x project_home $home/projects_path
 
-# Load oh-my-fish configuration.
-source $OMF_PATH/init.fish
+# load oh-my-fish configuration.
+source $omf_path/init.fish
 
-# CTRL+R to search like reverse search
+# ctrl+r to search like reverse search
 function fish_user_key_bindings
   bind \cr 'peco_select_history (commandline -b)'
 end
 
-# FZF
-set -x FZF_DEFAULT_COMMAND 'rg --files'
-set -x FZF_DEFAULT_OPTS '--height 40% --preview \'[[ $(file --mime {}) =~ binary ]] && echo {} is a binary file || bat {} --style=numbers --theme=GitHub --color=always\''
 
+# custom
+set -x path /usr/local/opt/python/libexec/bin $path
+set -x path /users/pedromedeiros/.cache/rebar3/bin $path
 
-# GOLANG
-set -x GOPATH $HOME
-set -x PATH $GOPATH/bin $PATH
+# eval (python -m virtualfish compat_aliases)
 
+# fzf
+
+set -x fzf_default_command 'rg --files'
+set -x fzf_default_opts '--height 40% --preview \'[[ $(file --mime {}) =~ binary ]] && echo {} is a binary file || bat {} --style=numbers\''
+
+# golang
+set -x gopath $home
+set -x path $gopath/bin $path
+
+# anrdoid dev
+
+set -x android_home $home/library/android/sdk
+set -x path $path $android_home/emulator $android_home/tools
+set -x path $path $android_home/tools/bin $android_home/platform-tools
