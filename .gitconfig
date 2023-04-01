@@ -12,8 +12,8 @@
 [pull]
   rebase = true
 [diff]
-	algorithm = patience
+  algorithm = patience
 [protocol]
-	version = 2
+  version = 2
 [gc]
-	writeCommitGraph = true
+  writeCommitGraph = true
