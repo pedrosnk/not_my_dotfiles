@@ -17,9 +17,6 @@ set -gx erl_aflags "-kernel shell_history enabled"
 
 set -gx path $home/otps/elixir/bin $path
 
-# shopify setup
-set -x turbo_bar 0
-
 # ser rust path for cargo races atocomplete
 # set -x 'rust_src_path' /users/{user}/desenv/rustc-1.10.0/src
 
@@ -38,8 +35,6 @@ end
 # custom
 set -x path /usr/local/opt/python/libexec/bin $path
 set -x path /users/pedromedeiros/.cache/rebar3/bin $path
-
-# eval (python -m virtualfish compat_aliases)
 
 # fzf
 
