@@ -27,9 +27,14 @@ return require("packer").startup(function(use)
   use("mbbill/undotree")
   use("tpope/vim-fugitive")
 
+  use("mattn/vim-goimports")
+
   -- NvimTree and dev icons
   use("nvim-tree/nvim-tree.lua")
   use("nvim-tree/nvim-web-devicons")
+
+  -- elixir-tools
+  use({ "elixir-tools/elixir-tools.nvim", tag = "stable", requires = { "nvim-lua/plenary.nvim" }})
 
   use {
     "VonHeikemen/lsp-zero.nvim",
