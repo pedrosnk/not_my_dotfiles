@@ -1,4 +1,5 @@
 local lsp = require("lsp-zero")
+local lspconfig = require("lspconfig")
 
 lsp.preset("recommended")
 
@@ -66,3 +67,15 @@ lsp.setup()
 vim.diagnostic.config({
   virtual_text = true
 })
+
+lspconfig.pylsp.setup({
+   settings = {
+     pylsp = {
+       plugins = {
+         jedi = {
+           environment = io.popen('which python'):read(),
+         }
+       }
+     }
+   }
+ })
